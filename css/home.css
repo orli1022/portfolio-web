@@ -382,15 +382,15 @@ form textarea:focus {
 }
 
 #name {
-    background-image: url(/assets/input-user.svg);
+    background-image: url(assets/input-user.svg);
 }
 
 #email {
-    background-image: url(/assets/input-email.svg);
+    background-image: url(assets/input-email.svg);
 }
 
 #message {
-    background-image: url(/assets/input-message.svg);
+    background-image: url(assets/input-message.svg);
     background-position: 10px 15px;
 }
 
