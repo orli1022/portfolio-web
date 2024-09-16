@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.light {
+    --text-color: #303030;
+    --background-color: #fff;
+    --second-color: #303030;
+    --box-shadow: #aaa;
+    --sub-bacground-color: #eee;
+    --a-color: #fff;
+}
+
+.dark {
+    --text-color: #ffe9dd;
+    --background-color: #303030;
+    --second-color: #1a1a1a;
+    --box-shadow: #0000006f;
+    --sub-bacground-color: #3a3a3a;
+    --a-color: #dcdbdb;
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.up-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    cursor: pointer;
+}
+
+.up-btn i {
+    font-size: 35px;
+    color: #fff;
+    line-height: 55px;
+}
+
+.header-box {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-color);
+    position: fixed;
+    top: 0px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin-left: 30px;
+}
+
+.icon img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: var(--a-color);
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0px 10px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    left: 50%; /* 底線起點為中間 */
+    right: 50%;
+    bottom: 0;
+    border-bottom: 2px solid #ff9a91;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    /* 底線向左右延伸 */
+    left: 0;
+    right: 0;
+}
+
+.mode-switch {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mode-switch i {
+    font-size: 30px;
+    color: #fa0;
+}
+
+.wrap {
+    padding: 30px 50px;
+    margin-bottom: 50px;
+}
+
+.wrap:last-child {
+    margin-bottom: 20px;
+}
+
+.project-overview {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.project-overview .wrap {
+    display: flex;
+    padding: 30px;
+    box-shadow: 0px 5px 5px var(--box-shadow);
+}
+
+.project-pic {
+    align-items: center;
+    width: 45%;
+}
+
+.project-pic img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.project-details {
+    align-self: last baseline;
+    width: 55%;
+    margin-right: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-name {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #aaa;
+}
+
+.project-name h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.date {
+    text-align: end;
+    color: #aaa;
+}
+
+.project-txt {
+    margin: 10px 0px 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: var(--second-color);
+    color: var(--a-color);
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+.links a:hover {
+    background-color: #02020269;
+    color: var(--a-color);
+}
+
+.links a i {
+    color: var(--a-color);
+    margin-right: 5px;
+}
+
+section:nth-child(even) {
+    background-color: var(--sub-bacground-color);
+    border-radius: 10px;
+}
+
+.group {
+    width: 70%;
+    margin: 0px auto 30px;
+}
+
+.title,
+.main-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.main-title {
+    font-size: 26px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.pic {
+    width: 50%;
+    margin: auto;
+    box-shadow: 5px 8px 20px var(--box-shadow);
+}
+
+.pic img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.features-box {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    margin: 50px 20px 50px;
+    box-shadow: 5px 5px 20px var(--box-shadow);
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.features .group {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.features .pic {
+    width: 30%;
+    margin: auto;
+    box-shadow: none;
+}
+
+.features .features-box:nth-child(even) .pic {
+    order: -1;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--second-color);
+    margin-top: 10px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    margin: 0px 20px;
+}
+
+.left p {
+    color: #eee;
+}
+
+.right i {
+    color: #eee;
+    margin: 0px 10px;
+    font-size: 26px;
+}
+
+.right i:hover {
+    color: #b1aeaeb9;
+}
+/* 2 */
