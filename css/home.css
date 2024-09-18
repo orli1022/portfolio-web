@@ -40,6 +40,7 @@ body {
     background-color: rgb(48, 48, 48);
     position: fixed;
     top: 0px;
+    z-index: 100;
 }
 
 .icon {
@@ -455,9 +456,27 @@ footer {
 @media (min-width: 481px) and (max-width: 768px) {
 }
 
+/* .cv {
+        flex-direction: column;
+    } */
+
+/* .cv img {
+        width: 40%;
+        margin-top: 30px;
+    } */
+
+/* .cv-btn {
+        display: block;
+        margin-top: 30px;
+    } */
+
+/* .cv-btn a {
+        margin: 0px 10px;
+    } */
+
 /* 平板 */
 @media (min-width: 769px) and (max-width: 992px) {
-    /* .about {
+    .about {
         padding-top: 15%;
         flex-direction: column;
         position: relative;
@@ -470,11 +489,6 @@ footer {
         z-index: -1;
     }
 
-    .about .txt {
-        width: 60%;
-        margin: 0px 20px;
-    }
-
     .about h1 {
         line-height: 1.2em;
         margin: 0px 0px 30px;
@@ -482,11 +496,53 @@ footer {
 
     .about p {
         width: 100%;
-    } 
-        
-    .tool li {
-        font-size: 14px;
-    }*/
+    }
+
+    .item-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item-pic i {
+        line-height: 100px;
+        font-size: 60px;
+    }
+
+    .project-group {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        width: 65%;
+        margin-bottom: 60px;
+    }
+
+    .cv img {
+        width: 40%;
+        margin-top: 30px;
+    }
+
+    .contact-group {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .social-links p {
+        font-size: 18px;
+    }
+
+    form {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    #my-form-status {
+        margin: 0px 10px;
+    }
 }
 
 /* 小型桌機 */
