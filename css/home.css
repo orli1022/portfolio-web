@@ -66,7 +66,6 @@ body {
 
 nav {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +109,7 @@ nav a:hover::after {
     display: none;
     width: 80px;
     height: 80px;
-    background-color: transparent;
+    /* background-color: #fff; */
     border: none;
     position: absolute;
     top: 0;
@@ -118,8 +117,11 @@ nav a:hover::after {
     right: 0;
     margin: auto;
     font-size: 40px;
-    color: #ff9a91;
     cursor: pointer;
+}
+
+.navbar i {
+    color: #ff9a91;
 }
 
 .container {
@@ -160,7 +162,7 @@ nav a:hover::after {
 }
 
 .about p {
-    width: 90%;
+    width: 100%;
     text-align: justify;
     margin: auto;
     font-size: 20px;
@@ -449,33 +451,218 @@ footer {
 }
 
 /* 小型手機 */
-@media (max-width: 480px) {
+@media (max-width: 485px) {
+    .navbar button {
+        display: block;
+        background-color: transparent;
+    }
+
+    .icon {
+        position: static;
+        margin: 5px 0px 0px 10px;
+    }
+
+    nav {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        background-color: #1e1e1e;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        padding: 20px 15px;
+        position: relative;
+        transition: background-color 0.2s, color 0.1s;
+    }
+
+    nav a:hover {
+        background-color: #f7e8e6;
+        color: #ff9a91;
+    }
+
+    nav a + a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f6b7b1;
+    }
+
+    nav a:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    nav a:nth-child(3) {
+        margin-left: 0px;
+    }
+
+    nav a::after {
+        display: none;
+    }
+
+    .about {
+        padding-top: 15%;
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 70%;
+        margin: 0px auto;
+    }
+
+    .about h1 {
+        text-align: center;
+        width: 100%;
+        line-height: 1.2em;
+        margin: 30px 0px 30px;
+        font-size: 46px;
+    }
+
+    .about .txt {
+        width: 80%;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .skills-list {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .item-pic {
+        width: 80px;
+        height: 80px;
+        margin: 40px 20px 20px;
+    }
+
+    .item-pic i {
+        line-height: 80px;
+        font-size: 60px;
+    }
+
+    .project-group {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+
+    .cv {
+        flex-direction: column;
+    }
+
+    .cv img {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .cv-btn {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .cv-btn a {
+        margin: 0px 10px;
+    }
+
+    .contact-group {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 0px;
+    }
+
+    .social-links a {
+        width: 60px;
+        height: 60px;
+        margin: 0px 10px 15px;
+    }
+
+    .social-links i {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .social-links p {
+        display: none;
+    }
+
+    form {
+        /* margin-top: 30px; */
+        width: 100%;
+    }
+
+    #my-form-status {
+        margin: 0px 10px;
+    }
 }
 
 /* 中型手機 */
-@media (min-width: 481px) and (max-width: 768px) {
-}
-
-/* .cv {
-        flex-direction: column;
-    } */
-
-/* .cv img {
-        width: 40%;
-        margin-top: 30px;
-    } */
-
-/* .cv-btn {
+@media (min-width: 486px) and (max-width: 768px) {
+    .navbar button {
         display: block;
-        margin-top: 30px;
-    } */
+        background-color: transparent;
+    }
 
-/* .cv-btn a {
-        margin: 0px 10px;
-    } */
+    .icon {
+        position: static;
+        margin: 5px 0px 0px 10px;
+    }
 
-/* 平板 */
-@media (min-width: 769px) and (max-width: 992px) {
+    nav {
+        display: none; /* 隱藏 */
+        position: relative;
+        flex-direction: column;
+        background-color: #1e1e1e;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        padding: 20px 15px;
+        position: relative;
+        transition: background-color 0.2s, color 0.1s;
+    }
+
+    nav a:hover {
+        background-color: #f7e8e6;
+        color: #ff9a91;
+    }
+
+    nav a + a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f6b7b1;
+    }
+
+    nav a:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    nav a:nth-child(3) {
+        margin-left: 0px;
+    }
+
+    nav a::after {
+        display: none;
+    }
+
     .about {
         padding-top: 15%;
         flex-direction: column;
@@ -492,10 +679,99 @@ footer {
     .about h1 {
         line-height: 1.2em;
         margin: 0px 0px 30px;
+        font-size: 64px;
     }
 
     .about p {
+        font-size: 18px;
+    }
+
+    .skills-list {
         width: 100%;
+    }
+
+    .item-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    .item-pic i {
+        line-height: 90px;
+        font-size: 60px;
+    }
+
+    .project-group {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .box {
+        width: 70%;
+        margin-bottom: 60px;
+    }
+
+    .cv {
+        flex-direction: column;
+    }
+
+    .cv img {
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    .cv-btn {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .cv-btn a {
+        margin: 0px 10px;
+    }
+
+    .contact-group {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .social-links p {
+        font-size: 16px;
+    }
+
+    form {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #my-form-status {
+        margin: 0px 10px;
+    }
+}
+
+/* 平板 */
+@media (min-width: 769px) and (max-width: 992px) {
+    nav {
+        height: 100%;
+    }
+
+    .about {
+        padding-top: 15%;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .photo {
+        position: absolute;
+        top: 15%;
+        right: 12%;
+        z-index: -1;
+    }
+
+    .about h1 {
+        line-height: 1.2em;
+        margin: 0px 0px 30px;
     }
 
     .item-pic {
@@ -547,6 +823,10 @@ footer {
 
 /* 小型桌機 */
 @media (min-width: 993px) and (max-width: 1200px) {
+    nav {
+        height: 100%;
+    }
+
     .container {
         max-width: 1000px;
     }
@@ -588,5 +868,13 @@ footer {
 @media (min-width: 1201px) {
     .container {
         max-width: 1200px;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .about p {
+        width: 90%;
     }
 }
