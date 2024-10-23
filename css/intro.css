@@ -26,6 +26,7 @@
 
 html {
     scroll-padding-top: 70px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -66,6 +67,24 @@ body {
     background-color: var(--second-color);
     position: fixed;
     top: 0px;
+}
+
+#menuBtn {
+    display: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    position: fixed;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#menuBtn:hover {
+    color: #f6b7b1;
 }
 
 .icon {
@@ -298,4 +317,125 @@ footer {
 .right i:hover {
     color: #b1aeaeb9;
 }
-/* 2 */
+
+/* 小型手機 */
+@media (max-width: 485px) {
+    #menuBtn {
+        display: block;
+        background-color: transparent;
+    }
+
+    .mode-switch {
+        margin-right: 80px;
+    }
+
+    .icon {
+        position: static;
+        margin: 5px 0px 0px 10px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 200%;
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        background-color: #1e1e1e;
+        transition: background-color 0.2s, color 0.1s;
+    }
+
+    nav a:hover {
+        background-color: #f7e8e6;
+        color: #ff9a91;
+    }
+
+    nav a + a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f6b7b1;
+    }
+
+    nav a::after {
+        display: none;
+    }
+}
+
+/* 中型手機 */
+@media (min-width: 486px) and (max-width: 768px) {
+    #menuBtn {
+        display: block;
+        background-color: transparent;
+    }
+
+    .mode-switch {
+        margin-right: 80px;
+    }
+
+    .icon {
+        position: static;
+        margin: 5px 0px 0px 10px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 200%;
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        background-color: #1e1e1e;
+        transition: background-color 0.2s, color 0.1s;
+    }
+
+    nav a:hover {
+        background-color: #f7e8e6;
+        color: #ff9a91;
+    }
+
+    nav a + a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f6b7b1;
+    }
+
+    nav a::after {
+        display: none;
+    }
+}
+
+/* 平板 */
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+/* 小型桌機 */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+/* 桌機 */
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1200px;
+    }
+}
