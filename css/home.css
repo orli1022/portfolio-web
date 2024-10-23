@@ -267,6 +267,11 @@ nav a:hover::after {
     margin: 5px 5px;
 }
 
+.custom-item-pic img {
+    width: 52px;
+    margin-top: 18px;
+}
+
 .cv {
     display: flex;
     justify-content: center;
@@ -547,6 +552,10 @@ footer {
         font-size: 60px;
     }
 
+    .custom-item-pic img {
+        margin-top: 14px;
+    }
+
     .project-group {
         flex-wrap: wrap;
         margin-bottom: 20px;
@@ -784,6 +793,10 @@ footer {
         font-size: 60px;
     }
 
+    .custom-item-pic img {
+        margin-top: 22px;
+    }
+
     .project-group {
         flex-wrap: wrap;
         margin-bottom: 40px;
@@ -847,6 +860,11 @@ footer {
         font-size: 14px;
     }
 
+    .custom-item-pic img {
+        width: 60px;
+        margin-top: 30px;
+    }
+
     .cv {
         margin-top: 30px;
     }
@@ -876,5 +894,10 @@ footer {
 
     .about p {
         width: 90%;
+    }
+
+    .custom-item-pic img {
+        width: 60px;
+        margin-top: 30px;
     }
 }
