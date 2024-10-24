@@ -36,7 +36,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: auto;
 }
 
@@ -162,13 +161,11 @@ nav a:hover::after {
 
 .project-overview .wrap {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
     box-shadow: 0px 5px 5px var(--box-shadow);
-}
-
-.project-pic {
-    align-items: center;
-    width: 45%;
 }
 
 .project-pic img {
@@ -178,10 +175,9 @@ nav a:hover::after {
 
 .project-details {
     align-self: last baseline;
-    width: 55%;
-    margin-right: 30px;
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     box-sizing: border-box;
+    margin: auto;
 }
 
 .project-name {
@@ -234,7 +230,6 @@ section:nth-child(even) {
 }
 
 .group {
-    width: 70%;
     margin: 0px auto 30px;
 }
 
@@ -253,7 +248,6 @@ section:nth-child(even) {
 }
 
 .pic {
-    width: 50%;
     margin: auto;
     box-shadow: 5px 8px 20px var(--box-shadow);
 }
@@ -266,7 +260,6 @@ section:nth-child(even) {
 .features-box {
     display: flex;
     padding: 20px;
-    height: 300px;
     margin: 50px 20px 50px;
     box-shadow: 5px 5px 20px var(--box-shadow);
     background-color: var(--background-color);
@@ -368,6 +361,58 @@ footer {
     nav a::after {
         display: none;
     }
+
+    .wrap {
+        padding: 30px;
+    }
+
+    .project-pic {
+        width: 100%;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    .project-name h1 {
+        font-size: 38px;
+    }
+
+    .links a {
+        margin: 0px 5px;
+    }
+
+    .features-box {
+        flex-direction: column;
+        padding: 15px;
+        margin: 20px 0px;
+    }
+
+    .features .group {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .features .pic {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .features .features-box:nth-child(even) .pic {
+        order: 0;
+    }
+
+    .up-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .up-btn i {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
 
 /* 中型手機 */
@@ -420,22 +465,142 @@ footer {
     nav a::after {
         display: none;
     }
+
+    .wrap {
+        padding: 30px;
+    }
+
+    .project-pic {
+        width: 70%;
+    }
+
+    .project-details {
+        width: 80%;
+    }
+
+    .project-name h1 {
+        font-size: 42px;
+    }
+
+    .pic {
+        width: 80%;
+    }
+
+    .features-box {
+        flex-direction: column;
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .features .group {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .features .pic {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .features .features-box:nth-child(even) .pic {
+        order: 0;
+    }
+
+    .up-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .up-btn i {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
 
 /* 平板 */
 @media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .project-pic {
+        width: 60%;
+    }
+
+    .project-details {
+        width: 80%;
+    }
+
+    .pic {
+        width: 70%;
+    }
+
+    .features .group {
+        width: 60%;
+        margin: 0px 15px;
+    }
+
+    .features .pic {
+        width: 40%;
+    }
 }
 
 /* 小型桌機 */
 @media (min-width: 993px) and (max-width: 1200px) {
     .container {
-        max-width: 1000px;
+        max-width: 960px;
+    }
+
+    .project-overview .wrap {
+        flex-direction: row;
+    }
+
+    .project-pic {
+        width: 50%;
+    }
+
+    .project-details {
+        width: 50%;
+        margin-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .group {
+        width: 80%;
+    }
+
+    .pic {
+        width: 50%;
     }
 }
 
 /* 桌機 */
 @media (min-width: 1201px) {
     .container {
-        max-width: 1200px;
+        max-width: 1140px;
+    }
+
+    .project-overview .wrap {
+        flex-direction: row;
+    }
+
+    .project-pic {
+        width: 45%;
+    }
+
+    .project-details {
+        width: 55%;
+        margin-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .group {
+        width: 80%;
+    }
+
+    .pic {
+        width: 50%;
     }
 }
