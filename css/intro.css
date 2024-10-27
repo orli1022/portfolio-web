@@ -150,10 +150,6 @@ nav a:hover::after {
     margin-bottom: 50px;
 }
 
-.wrap:last-child {
-    margin-bottom: 20px;
-}
-
 .project-overview {
     width: 100%;
     padding-top: 80px;
@@ -197,6 +193,7 @@ nav a:hover::after {
 }
 
 .project-txt {
+    text-align: justify;
     margin: 10px 0px 20px;
 }
 
@@ -245,10 +242,26 @@ section:nth-child(even) {
 
 .content {
     padding: 20px;
+    text-align: justify;
+}
+
+.content-item h3 {
+    margin: 30px 0 20px;
+}
+
+.content-item a {
+    color: #659ded;
+    text-decoration: none;
+}
+
+.content-item a:hover {
+    text-decoration: underline;
 }
 
 .pic {
+    width: 80%;
     margin: auto;
+    margin-top: 20px;
     box-shadow: 5px 8px 20px var(--box-shadow);
 }
 
@@ -275,7 +288,7 @@ section:nth-child(even) {
 }
 
 .features .pic {
-    width: 30%;
+    width: 60%;
     margin: auto;
     box-shadow: none;
 }
@@ -482,10 +495,6 @@ footer {
         font-size: 42px;
     }
 
-    .pic {
-        width: 80%;
-    }
-
     .features-box {
         flex-direction: column;
         padding: 15px;
@@ -541,10 +550,6 @@ footer {
         width: 60%;
         margin: 0px 15px;
     }
-
-    .features .pic {
-        width: 40%;
-    }
 }
 
 /* 小型桌機 */
@@ -572,7 +577,7 @@ footer {
     }
 
     .pic {
-        width: 50%;
+        width: 90%;
     }
 }
 
@@ -598,9 +603,5 @@ footer {
 
     .group {
         width: 80%;
-    }
-
-    .pic {
-        width: 50%;
     }
 }
