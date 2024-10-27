@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="ORLI CHAO 的 Furry Market 毛茸茸市集專案介紹，展示了該網站設計和開發的理念、特色和功能介紹、開發中使用到的技術、遇到的問題及解決方案。" />
+        <meta
+            name="keywords"
+            content="ORLI CHAO, 前端開發, 個人作品集, 網頁設計, 網站介紹" />
+        <title>ORLI CHAO | 毛茸茸市集－網站介紹</title>
+        <link rel="icon" href="../assets/favicon.png" />
+        <link rel="stylesheet" href="../css/intro.css" />
+        <script
+            src="https://kit.fontawesome.com/7ed6dec2c8.js"
+            crossorigin="anonymous"></script>
+        <script src="../intro.js" defer></script>
+    </head>
+    <body class="light">
+        <header>
+            <div class="header-box">
+                <div class="icon">
+                    <a href="../index.html"
+                        ><img src="../assets/icon-removebg.png" alt=""
+                    /></a>
+                </div>
+                <nav>
+                    <a href="#about">設計理念</a>
+                    <a href="#features">功能介紹</a>
+                    <a href="#technologies">相關技術</a>
+                    <a href="#challenges">問題與挑戰</a>
+                </nav>
+                <button class="mode-switch">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+            </div>
+            <!-- menu-button -->
+            <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </header>
+        <div class="project-overview" id="project-overview">
+            <div class="wrap">
+                <div class="project-details">
+                    <div class="project-name">
+                        <h1>毛茸茸市集官網</h1>
+                        <h3>Furry Market Website</h3>
+                    </div>
+                    <div class="date">September 2024</div>
+                    <div class="project-txt">
+                        <p>
+                            毛茸茸市集網站是以寵物市集為發想的官方網站，旨在讓訪客更輕鬆地獲取市集的相關資訊。該專案主要用於練習網頁切版。
+                        </p>
+                    </div>
+                    <div class="links">
+                        <div class="btn-group">
+                            <a
+                                href="https://orli1022.github.io/Furry-Market-Website/"
+                                target="_blank">
+                                <i class="fa-solid fa-eye"></i>Live Demo</a
+                            >
+                            <a
+                                href="https://github.com/orli1022/Furry-Market-Website"
+                                target="_blank">
+                                <i class="fa-brands fa-github"></i>Repo</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-pic">
+                    <img
+                        src="../assets/project-02-removebg.png"
+                        alt="毛茸茸市集－頁面設計展示" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <section class="about" id="about">
+                    <div class="wrap">
+                        <div class="group">
+                            <div class="main-title">
+                                <h1>設計理念</h1>
+                            </div>
+                            <div class="content content-item">
+                                <p>
+                                    本專案的主要目的是練習使用 HTML 和 CSS
+                                    進行網頁切版，並以 JavaScript
+                                    添加動畫效果。為此，我選擇參考
+                                    <a
+                                        href="https://www.conas-choc.com/"
+                                        target="_blank">
+                                        Cona's 妮娜巧克力夢想城堡 |
+                                        南投埔里巧克力中部 DIY 觀光工廠
+                                    </a>
+                                    的官方網站，作為本專案的設計靈感。
+                                    <br /><br />
+                                    在設計過程中，我專注於以下幾個方面：<br /><br />
+                                    1. <strong>首頁切版練習</strong>：
+                                    此次專案主要著重於官網首頁的切版，因此目前僅完成首頁部分。透過這樣的練習，我希望能增強自己在網頁切版方面的技能。<br /><br />
+                                    2. <strong>提升技術能力</strong>：
+                                    透過模仿和實現類似於其他官方網站的畫面和動畫，我希望能提高自己在前端基礎技術的應用能力。<br /><br />
+                                    3. <strong>設計風格探索</strong>：
+                                    我希望在這個專案中探索不同的設計風格，找出最適合寵物市集的元素，創造出活潑且吸引人的網站風格，讓訪客能感受到市集的溫馨與樂趣。<br /><br />
+                                    透過以上的設計理念，我期待能創造出一個既美觀又功能完善的網站，並在過程中不斷挑戰和提升自己。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img
+                                src="../assets/project-02-about.jpg"
+                                alt="網站在不同設備上的響應式設計" />
+                        </div>
+                    </div>
+                </section>
+                <section class="features" id="features">
+                    <div class="wrap">
+                        <div class="main-title">
+                            <h1>特色介紹</h1>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>向下滑動指示球</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        本網站的網頁橫幅（Banner）中設置了一個持續上下移動的指示球，旨在引導訪客探索更多網頁內容。當設備螢幕縮小到一定程度後，指示球會自動隱藏，以確保不影響整體排版。此設計運用了
+                                        CSS
+                                        動畫技術，提升了用戶體驗的互動性與趣味性，讓訪客自然而然地瀏覽網站的其他部分。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-02-feature-1.gif"
+                                    alt="展示向下滑動的指示球" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>動態資訊區</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        為了提升互動性，資訊區設計了懸停動畫。當訪客的游標懸停在某個資訊區塊上，該區塊的標誌會左右搖晃，以吸引目光並增添動態視覺效果。此外，透過
+                                        JavaScript
+                                        設計的輪播功能，在較小螢幕設備上會自動切換顯示內容，並以預設的時間間隔循環呈現，確保介面整潔，避免資訊擁擠，進一步提升訪客的瀏覽體驗。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-02-feature-2.gif"
+                                    alt="資訊區塊的動態顯示" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>互動式圖片展示區</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        當游標懸停於圖片上時，相關文字和不同方向的邊框線會隨之顯現，營造出動態效果。此設計不僅提供了圖片的詳細資訊，還通過視覺變化增強互動性與趣味性。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-02-feature-3.gif"
+                                    alt="互動式圖片展示區" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>圖片切換功能</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        透過點擊左右切換按鈕，訪客能輕鬆瀏覽圖片庫中的每張圖片，自由切換至上一張或下一張。這樣的設計讓圖片瀏覽變得更方便，訪客也能更專注於每張圖片的細節，提升整體的互動體驗。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-02-feature-4.gif"
+                                    alt="圖片切換功能" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>圖片懸停顯示與滑動輪播</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        該區塊的圖片設計了懸停效果，當訪客將游標懸停在圖片上時，相關資訊會立即顯示，從而提升了互動性。此外，輪播功能使訪客能夠透過滑動手勢輕鬆切換不同的資訊內容，增強了使用的靈活性與便利性，並確保在各種設備上均能提供良好的瀏覽體驗。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-02-feature-5.gif"
+                                    alt="圖片懸停顯示與滑動輪播" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="technologies" id="technologies">
+                    <div class="wrap">
+                        <div class="group">
+                            <div class="main-title">
+                                <h1>相關技術</h1>
+                            </div>
+                            <div class="content">
+                                <div class="content-item">
+                                    <h3>Swiper 輪播套件</h3>
+                                    <p>
+                                        在本專案中，我選擇使用 Swiper
+                                        來實現輪播功能，主要因為它是一個功能齊全且可客製化的輪播套件。除了基本的輪播功能，Swiper
+                                        還提供導航按鈕和頁碼等細項的自定義設置。相比於從零開始用原始
+                                        JavaScript 實現輪播效果，Swiper
+                                        不僅節省了開發時間，還能確保更高的穩定性。<br /><br />
+                                        若想了解更多，請訪問
+                                        <a
+                                            href="https://swiperjs.com/"
+                                            target="_blank"
+                                            >Swiper</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="challenges" id="challenges">
+                    <div class="wrap">
+                        <div class="group">
+                            <div class="main-title">
+                                <h1>問題與挑戰</h1>
+                            </div>
+                            <div class="content">
+                                <div class="content-item">
+                                    <h3>輪播功能的挑戰與選擇</h3>
+                                    <p>
+                                        在開發輪播功能的過程中，我最初嘗試使用原生
+                                        JavaScript
+                                        來編寫滑動效果，但發現這樣的方式過於複雜且耗時。為了提升開發效率，我開始尋找更合適的套件，最終選擇了
+                                        Swiper 來達成目標。<br /><br />
+                                        然而，在最一開始的資訊區塊中，我並沒有使用
+                                        Swiper，而是透過 JavaScript
+                                        實現了類似輪播的輪流顯示效果。雖然缺少滑動切換的靈活性，但仍然有效地呈現了所需的內容。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a href="#project-overview" class="up-btn"
+                    ><i class="fa-solid fa-arrow-up"></i
+                ></a>
+            </main>
+        </div>
+        <footer>
+            <div class="left"><p>Copyright &copy; 2024 ORLI CHAO</p></div>
+            <div class="right">
+                <div class="social-links">
+                    <a href="https://github.com/orli1022" target="_blank"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="mailto:orlichao9010@mail.com"
+                        ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
