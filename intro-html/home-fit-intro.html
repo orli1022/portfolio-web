@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="ORLI CHAO 的 Home Fit 宅運動專案介紹，展示了該網站設計和開發的理念、特色和功能介紹、開發中使用到的技術、遇到的問題及解決方案。" />
+        <meta
+            name="keywords"
+            content="ORLI CHAO, 前端開發, 個人作品集, 網頁設計, 網站介紹" />
+        <title>ORLI CHAO | 宅運動－網站介紹</title>
+        <link rel="icon" href="../assets/favicon.png" />
+        <link rel="stylesheet" href="../css/intro.css" />
+        <script
+            src="https://kit.fontawesome.com/7ed6dec2c8.js"
+            crossorigin="anonymous"></script>
+        <script src="../intro.js" defer></script>
+    </head>
+    <body class="light">
+        <header>
+            <div class="header-box">
+                <div class="icon">
+                    <a href="../index.html"
+                        ><img src="../assets/icon-removebg.png" alt=""
+                    /></a>
+                </div>
+                <nav>
+                    <a href="#about">設計理念</a>
+                    <a href="#features">功能介紹</a>
+                    <a href="#technologies">相關技術</a>
+                    <a href="#challenges">問題與挑戰</a>
+                </nav>
+                <button class="mode-switch">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+            </div>
+            <!-- menu-button -->
+            <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </header>
+        <div class="project-overview" id="project-overview">
+            <div class="wrap">
+                <div class="project-details">
+                    <div class="project-name">
+                        <h1>宅運動</h1>
+                        <h3>Home Fit</h3>
+                    </div>
+                    <div class="date">October 2024</div>
+                    <div class="project-txt">
+                        <p>
+                            宅運動是一個居家健身平台，讓用戶可以將喜愛的 YouTube
+                            健身影片加入個人清單並安排運動課表。此外，平台還允許用戶發起運動挑戰，根據自訂的挑戰天數和內容進行打卡，讓運動變得更有趣且具挑戰性。無論在家中還是外出，用戶都能輕鬆保持運動的好習慣。
+                        </p>
+                    </div>
+                    <div class="links">
+                        <div class="btn-group">
+                            <a
+                                href="https://orli1022.github.io/Home-Fit/"
+                                target="_blank">
+                                <i class="fa-solid fa-eye"></i>Live Demo</a
+                            >
+                            <a
+                                href="https://github.com/orli1022/Home-Fit"
+                                target="_blank">
+                                <i class="fa-brands fa-github"></i>Repo</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-pic">
+                    <img src="../assets/project-03-removebg.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <section class="about" id="about">
+                    <div class="wrap">
+                        <div class="group">
+                            <div class="main-title">
+                                <h1>設計理念</h1>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    在日常生活中，許多人會選擇在家中透過 YouTube
+                                    觀看健身影片來運動，使用者往往會將喜愛的健身影片添加至
+                                    YouTube
+                                    的播放清單，然而這種方式在課表安排上存在一定的局限性，尤其是在需要多樣化訓練時，必須頻繁創建不同的影片清單。這促使我思考如何簡化運動課表的規劃，並提升整體使用體驗。<br /><br />
+                                    因此，我開發了這個居家健身平台，旨在解決運動課表安排的問題。該平台不僅允許用戶將喜愛的
+                                    YouTube
+                                    健身影片添加至個人清單中，還能客製化地安排運動課表。此外，為了增強運動的趣味性和挑戰性，我加入了每日運動打卡及運動挑戰功能，希望能激勵用戶持續參與，培養良好的運動習慣。<br /><br />
+                                    在技術方面，本專案基於 Vue 3
+                                    框架進行開發，並選擇 Bootstrap 5 作為 CSS
+                                    框架，以加速開發流程並確保響應式設計，提供良好的跨設備使用體驗。在後端，我使用
+                                    Firebase
+                                    作為數據存儲和管理的解決方案，這不僅提升了系統的穩定性，也支持即時數據同步，進一步強化了用戶互動性。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="../assets/project-03-about.jpg" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section class="features" id="features">
+                    <div class="wrap">
+                        <div class="main-title">
+                            <h1>特色介紹</h1>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>每日打卡與運動紀錄</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        用戶登入後會進入首頁，系統將自動顯示當月的運動天數，並在日期格子中標註每次打卡的運動日期。用戶只需點擊「今日打卡」即可完成當日記錄，形成直觀的運動習慣追蹤方式。隨著格子逐漸填滿，視覺上的成就感將激勵用戶持續每日運動。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-03-feature-1.gif"
+                                    alt="每日打卡與運動紀錄" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>靈活的影片管理</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        用戶可以透過標準網址、短網址或 Shorts
+                                        網址將喜愛的 YouTube
+                                        影片加入個人清單，並依照訓練類型自訂分類，打造專屬的訓練影片清單。這樣的管理方式讓用戶能快速找到適合的影片，靈活地安排訓練計劃，輕鬆管理健身內容。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-03-feature-2.gif"
+                                    alt="新增影片至清單並分類" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>客製化運動課表</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        用戶可以創建多個課表，自訂名稱和圖示，並自由安排清單內的影片至特定的訓練日期。隨時都能新增、刪除或更換影片，讓用戶能夠實現個人化的訓練計劃，輕鬆滿足不同的訓練目標需求。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-03-feature-3.gif"
+                                    alt="客製化運動課表" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>課表管理與展示</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        課表將展示用戶安排的運動影片，並將沒有安排課程的日期標示為「今日沒有課程」。為了提升課表的瀏覽體驗，若某一天安排了大量影片，系統將自動開啟滾動顯示，避免畫面擁擠，並保持整體美觀。此外，用戶還能將喜歡的課表加入收藏區，便於日後快速訪問。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-03-feature-4.gif"
+                                    alt="課表管理與展示" />
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="group">
+                                <div class="title">
+                                    <h1>運動挑戰功能</h1>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        平台提供專屬的挑戰功能，用戶可以輕鬆地建立挑戰，自訂內容和挑戰天數，並進行打卡。一旦挑戰完成，系統會自動標記為「已完成」，並且無法再次編輯。這樣的設計不僅增添了運動的趣味性，還能讓用戶獲得成就感，進而培養持續運動的習慣。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img
+                                    src="../assets/project-03-feature-5.gif"
+                                    alt="運動挑戰打卡" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="technologies" id="technologies">
+                    <div class="wrap">
+                        <div class="group">
+                            <div class="main-title">
+                                <h1>相關技術</h1>
+                            </div>
+                            <div class="content">
+                                <div class="content-item">
+                                    <h3>Vue 3 專案建置</h3>
+                                    <p>
+                                        本專案使用 Vue 3 建置，並透過 Vue Router
+                                        配置路由，使得頁面的導航更加流暢。採用
+                                        Pinia
+                                        作為狀態管理工具，能有效管理組件所需的資料，並結合
+                                        TypeScript
+                                        進行語法檢查，提升程式碼的可讀性與維護性。此外，利用
+                                        Vite
+                                        作為打包工具，加快開發速度並提升應用性能。
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h3>Bootstrap 5 版面設計</h3>
+                                    <p>
+                                        本專案使用 Bootstrap 5
+                                        來構建整體的版面配置，大部分樣式依賴
+                                        Bootstrap 提供的元件，再搭配 CSS
+                                        進行細部修改與調整，實現響應式設計，以確保在不同設備上都能良好顯示。這樣的做法不僅提升了開發效率，也確保了界面的美觀與一致性。<br /><br />
+                                        若想了解更多，請訪問
+                                        <a
+                                            href="https://bootstrap5.hexschool.com/"
+                                            target="_blank"
+                                            >Bootstrap</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h3>Firebase 的應用</h3>
+                                    <p>
+                                        Firebase 是一個提供多種功能的後端即服務
+                                        (BaaS)
+                                        平台。本專案利用其用戶認證功能，確保用戶資料的安全性與隱私性，並透過
+                                        Firestore
+                                        儲存和管理用戶的相關資料，同時將用戶上傳的圖片存放在
+                                        Firebase Storage。藉由 Firebase
+                                        提供的服務，專案無需搭建後端伺服器，即可輕鬆實現資料的存取、更新和刪除，進一步提升整體應用的功能性。<br /><br />
+                                        若想了解更多，請訪問
+                                        <a
+                                            href="https://firebase.google.com/"
+                                            target="_blank"
+                                            >Firebase</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="challenges" id="challenges">
+                    <div class="wrap">
+                        <div class="group">
+                            <div class="main-title">
+                                <h1>問題與挑戰</h1>
+                            </div>
+                            <div class="content">
+                                <div class="content-item">
+                                    <h3>Firebase 與專案的整合</h3>
+                                    <p>
+                                        在專案中，將 Pinia 與 Firebase
+                                        整合以實現資料管理的過程充滿了挑戰。我需要在
+                                        Pinia store
+                                        掛載階段正確初始化資料，確保用戶登入後能即時獲取資訊，並根據用戶操作同步更新資料庫。過程中，我學會了使用
+                                        async/await 有效管理異步請求，並結合
+                                        Firebase
+                                        提供的資料操作方法來處理用戶的資料讀取與寫入。這次整合不僅讓我更深入了解
+                                        Firebase
+                                        的應用，也提升了我在處理異步請求方面的熟練度。<br /><br />
+                                        此外，在更新用戶頭貼時也遇到了一些小問題。最初設計為直接將圖片的
+                                        URL 儲存在
+                                        Firestore，但因部分檔案過大導致上傳失敗，經過研究後改用
+                                        Firebase Storage
+                                        來存放圖片，不僅成功解決了上傳限制問題，讓用戶能自由更換頭貼，也提升了圖片資料的管理效率。
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h3>路由的設置和錯誤頁面處理</h3>
+                                    <p>
+                                        為了確保用戶在登入後才能瀏覽主要頁面，我設計了路由導航守衛，確保除了登入和註冊頁面外，所有其他的頁面在進入前都會先檢查用戶的登入狀態；若用戶尚未登入，則自動重定向至登入頁面。<br /><br />
+                                        此外，在專案部署至 GitHub Pages
+                                        時，會遇到頁面刷新後返回 404
+                                        的問題。由於 GitHub Pages 僅支援 Vue
+                                        Router 的 hash
+                                        模式，但考量到美觀性和靈活性，我選擇直皆優化
+                                        404
+                                        頁面處理，並加入自動跳轉功能，使頁面刷新時若遇到
+                                        404
+                                        錯誤可自動返回正確網址。這樣不僅改善了用戶體驗，也避免了用戶刷新時看到錯誤頁面的情況。
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h3>提升密碼安全性</h3>
+                                    <p>
+                                        在使用 Google Chrome
+                                        進行開發測試時，我發現瀏覽器會對低強度的密碼發出洩露警告，並要求用戶立即更新密碼。為了提升安全性和用戶體驗，我增加了密碼強度檢查功能，確保用戶所設置的密碼符合安全標準。這樣不僅能解決瀏覽器警告的問題，還能加強用戶的隱私保障。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a href="#project-overview" class="up-btn"
+                    ><i class="fa-solid fa-arrow-up"></i
+                ></a>
+            </main>
+        </div>
+        <footer>
+            <div class="left"><p>Copyright &copy; 2024 ORLI CHAO</p></div>
+            <div class="right">
+                <div class="social-links">
+                    <a href="https://github.com/orli1022" target="_blank"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="mailto:orlichao9010@mail.com"
+                        ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
