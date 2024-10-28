@@ -1,5 +1,5 @@
 # Portfolio Website
-[Demo](https://orli1022.github.io/portfolio-web/portfolio-web-intro.html)
+[Demo](https://orli1022.github.io/portfolio-web/)
 
 This is my first portfolio website! It showcases my growth in front-end development, project achievements, and technical skills. I hope this gives you a deeper understanding of my work.
 
